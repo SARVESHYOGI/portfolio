@@ -17,14 +17,12 @@ function Main() {
             className="w-32 rounded-full mt-6 bg"
           />
         </div>
-        {/* <div>
-          <img src={sarvesh} alt="" srcset="" className="w-36 rounded-full" />
-        </div> */}
-        <div className="bg rounded-full py-1  m-4 justify-center px-10  w-32   content-center text-white">
+
+        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/home">HOME</Link>
         </div>
 
-        <div className="bg rounded-full py-1  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <a
             className="-mx-1"
             rel="noreferrer"
@@ -34,27 +32,27 @@ function Main() {
             RESUME
           </a>
         </div>
-        <div className="bg rounded-full py-1  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/project" className="-mx-2">
             {" "}
             PROJECTS
           </Link>
         </div>
 
-        <div className="bg rounded-full py-1  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/certificate" className="">
             CERTIFICATE
           </Link>
         </div>
-        <div className="bg rounded-full py-1 m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="bg rounded-full py-1 cursor-pointer m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/skills" className="">
             SKILLS
           </Link>
         </div>
-        <div className="bg rounded-full py-1 m-4 justify-center px-4  w-32   content-center text-white">
+        <div className="bg rounded-full py-1 cursor-pointer m-4 justify-center px-4  w-32   content-center text-white">
           <Link to="/profile">ABOUT ME</Link>
         </div>
-        <div className="bg rounded-full py-1 m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="bg rounded-full py-1 cursor-pointer m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/contact" className="">
             CONTACT
           </Link>

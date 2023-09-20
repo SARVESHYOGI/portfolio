@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 function Main() {
   return (
-    <div className="flex min-h-screen  fixed min-w-fit justify-center content-center object-center+ item-center">
-      <div id="main" className="p-5">
+    <div className="flex bg-blue-950 h-full z-50 fixed min-w-fit justify-center content-center object-center+ item-center">
+      <div id="main" className="p-5 ">
         <div className="mb-5">
           <img
             src={sarvesh1}
@@ -18,11 +18,11 @@ function Main() {
           />
         </div>
 
-        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/home">HOME</Link>
         </div>
 
-        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <a
             className="-mx-1"
             rel="noreferrer"
@@ -32,27 +32,27 @@ function Main() {
             RESUME
           </a>
         </div>
-        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/project" className="-mx-2">
             {" "}
             PROJECTS
           </Link>
         </div>
 
-        <div className="bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer  m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/certificate" className="">
             CERTIFICATE
           </Link>
         </div>
-        <div className="bg rounded-full py-1 cursor-pointer m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/skills" className="">
             SKILLS
           </Link>
         </div>
-        <div className="bg rounded-full py-1 cursor-pointer m-4 justify-center px-4  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer m-4 justify-center px-4  w-32   content-center text-white">
           <Link to="/profile">ABOUT ME</Link>
         </div>
-        <div className="bg rounded-full py-1 cursor-pointer m-4 justify-center px-10  w-32   content-center text-white">
+        <div className="an bg rounded-full py-1 cursor-pointer m-4 justify-center px-10  w-32   content-center text-white">
           <Link to="/contact" className="">
             CONTACT
           </Link>

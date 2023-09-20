@@ -1,3 +1,477 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+// https://docs.google.com/forms/d/e/1FAIpQLSf8ZRP8CAmXRWip6GqHwjkeX7nVd6KYfZJm-Gsal_b6WkBfrg/formResponse
+import React, { useState, useRef } from "react";
+// import "./cybersec.css";
+import "./Inquizition.css";
+
+import { AnimatePresence, motion } from "framer-motion";
+import $ from "jquery";
+import axios from "axios";
+import emailjs from "@emailjs/browser";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+library.add(faAngleDown);
+
+function Inquizition() {
+  const [selectedEvents, setSelectedEvents] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(false);
+  const [uploadedImageUrl, setUploadedImageUrl] = useState(""); // State to hold the image URL
+
+  const iframeRef = useRef(null);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
+
+  const handleIframeLoad = () => {
+    if (hasSubmitted) {
+      alert("Form submitted successfully!");
+      setHasSubmitted(false);
+    }
+  };
+
+  const handleEventSelection = (event) => {
+    const value = event.target.value;
+    if (event.target.checked) {
+      setSelectedEvents((prevState) => [...prevState, value]);
+    } else {
+      setSelectedEvents((prevState) => prevState.filter((e) => e !== value));
+    }
+  };
+
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // TODO: Replace the following mock logic with actual image upload logic
+      const mockImageUrl = "https://example.com/image.jpg";
+      setUploadedImageUrl(mockImageUrl); // Set the mock image URL to state
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target); // Use the form element directly
+    if (uploadedImageUrl) {
+      formData.append("entry.66330503", uploadedImageUrl);
+    }
+
+    // Submit the form
+    e.target.submit();
+
+    setHasSubmitted(true);
+  };
+
+  return (
+    <AnimatePresence>
+      <section className="registersection">
+        <motion.div
+          className="r_contact"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0, delay: 0 } }}
+          transition={{ delay: 0, duration: 2 }}
+        >
+          <p className="eventNamer">
+            <h1>inquizition 2.0</h1>
+          </p>
+          <div id="width">
+            <p>1. A team can have 2-3 players.</p>
+            <p>
+              2. Questions will be based on themes like Movies and pop culture,
+              sports, general knowledge etc with a specific Technical Knowledge
+              Round.
+            </p>
+            <p>
+              3. Much more than a regular quiz with exciting games in each
+              round.
+            </p>
+            <p>
+              4. A surprise final Round based on a board game. 5. Look into the
+              Inquizition 2.0 reel for more clues 🔍
+            </p>
+          </div>
+
+          <h1 className="r_contactus r_secondarycolor r_subhead">
+            ---Register Here---
+          </h1>
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSf8ZRP8CAmXRWip6GqHwjkeX7nVd6KYfZJm-Gsal_b6WkBfrg/formResponse"
+            method="post"
+            target="hidden_iframe"
+            onSubmit={handleSubmit}
+          >
+            <div className="player">Player 1</div>
+            <div className="r_contact_form ">
+              <div className="r_contact_flexo">
+                <label
+                  className="r_item1 r_form_text Team_name"
+                  for="Team_name"
+                >
+                  Name :
+                </label>
+                <input
+                  className="r_item2 r_inputform rmax"
+                  type="text"
+                  name="entry.1481073913"
+                  required
+                  id="Team_name"
+                />
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="year">
+                  Year:
+                </label>
+                <div className="dropdown">
+                  <select name="entry.701905621" id="year" required>
+                    <option value="" className="options rmax">
+                      Select Year
+                    </option>
+                    <option value="FE" className="optionsinyear rmax">
+                      FE
+                    </option>
+                    <option value="SE" className="optionsinyear rmax">
+                      SE
+                    </option>
+                    <option value="TE" className="optionsinyear rmax">
+                      TE
+                    </option>
+                    <option value="BE" className="optionsinyear rmax">
+                      BE
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="branch">
+                  Branch:
+                </label>
+                <div className="dropdown">
+                  <select name="entry.1512800305" id="branch" required>
+                    <option value="" className="options" selected disabled>
+                      Select Branch
+                    </option>
+                    <option value="AIDS" className="optionsinyear">
+                      AIDS
+                    </option>
+                    <option value="COMPS" className="optionsinyear">
+                      COMPS
+                    </option>
+                    <option value="IT" className="optionsinyear">
+                      IT
+                    </option>
+                    <option value="EXTC" className="optionsinyear">
+                      EXTC
+                    </option>
+                    <option value="CHEM" className="optionsinyear">
+                      CHEM
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="phone_no">
+                  Phone no.
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="text"
+                  maxLength={10}
+                  required
+                  id="phone_no"
+                  name="entry.1435771185"
+                  pattern="\d*"
+                  onInput={(e) => {
+                    e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                  }}
+                />
+              </div>
+
+              {/* <div className="r_contact_flexo">
+                <label for="pay" className="r_item1 r_form_text">
+                  pay:
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="email"
+                  name="entry.430290254"
+                  required
+                  id="email"
+                />
+              </div> */}
+              <div className="r_contact_flexo">
+                <label for="email" className="r_item1 r_form_text">
+                  Email:
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="email"
+                  required
+                  name="entry.1425523096"
+                  id="email"
+                />
+              </div>
+              <iframe
+                name="hidden_iframe"
+                ref={iframeRef}
+                title="Hidden Form Submission"
+                style={{ display: "none" }}
+                onLoad={handleIframeLoad}
+              ></iframe>
+            </div>
+            <div className="player">Player 2</div>
+            <div className="r_contact_form ">
+              <div className="r_contact_flexo">
+                <label
+                  className="r_item1 r_form_text Team_name"
+                  for="Team_name"
+                >
+                  Name :
+                </label>
+                <input
+                  className="r_item2 r_inputform rmax"
+                  type="text"
+                  name="entry.1481073913"
+                  id="Team_name"
+                />
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="year">
+                  Year:
+                </label>
+                <div className="dropdown">
+                  <select name="entry.701905621" id="year">
+                    <option value="" className="options rmax">
+                      Select Year
+                    </option>
+                    <option value="FE" className="optionsinyear rmax">
+                      FE
+                    </option>
+                    <option value="SE" className="optionsinyear rmax">
+                      SE
+                    </option>
+                    <option value="TE" className="optionsinyear rmax">
+                      TE
+                    </option>
+                    <option value="BE" className="optionsinyear rmax">
+                      BE
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="branch">
+                  Branch:
+                </label>
+                <div className="dropdown">
+                  <select name="entry.1512800305" id="branch">
+                    <option value="" className="options" selected disabled>
+                      Select Branch
+                    </option>
+                    <option value="AIDS" className="optionsinyear">
+                      AIDS
+                    </option>
+                    <option value="COMPS" className="optionsinyear">
+                      COMPS
+                    </option>
+                    <option value="IT" className="optionsinyear">
+                      IT
+                    </option>
+                    <option value="EXTC" className="optionsinyear">
+                      EXTC
+                    </option>
+                    <option value="CHEM" className="optionsinyear">
+                      CHEM
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="phone_no">
+                  Phone no.
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="text"
+                  maxLength={10}
+                  id="phone_no"
+                  name="entry.1435771185"
+                  pattern="\d*"
+                  onInput={(e) => {
+                    e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                  }}
+                />
+              </div>
+
+              {/* <div className="r_contact_flexo">
+                <label for="pay" className="r_item1 r_form_text">
+                  pay:
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="email"
+                  name="entry.430290254"
+                  required
+                  id="email"
+                />
+              </div> */}
+              <div className="r_contact_flexo">
+                <label for="email" className="r_item1 r_form_text">
+                  Email:
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="email"
+                  name="entry.1425523096"
+                  id="email"
+                />
+              </div>
+              <iframe
+                name="hidden_iframe"
+                ref={iframeRef}
+                title="Hidden Form Submission"
+                style={{ display: "none" }}
+                onLoad={handleIframeLoad}
+              ></iframe>
+            </div>
+            <div className="player">Player 3</div>
+            <div className="r_contact_form ">
+              <div className="r_contact_flexo">
+                <label
+                  className="r_item1 r_form_text Team_name"
+                  for="Team_name"
+                >
+                  Name :
+                </label>
+                <input
+                  className="r_item2 r_inputform rmax"
+                  type="text"
+                  name="entry.1481073913"
+                  id="Team_name"
+                />
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="year">
+                  Year:
+                </label>
+                <div className="dropdown">
+                  <select name="entry.701905621" id="year">
+                    <option value="" className="options rmax">
+                      Select Year
+                    </option>
+                    <option value="FE" className="optionsinyear rmax">
+                      FE
+                    </option>
+                    <option value="SE" className="optionsinyear rmax">
+                      SE
+                    </option>
+                    <option value="TE" className="optionsinyear rmax">
+                      TE
+                    </option>
+                    <option value="BE" className="optionsinyear rmax">
+                      BE
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="branch">
+                  Branch:
+                </label>
+                <div className="dropdown">
+                  <select name="entry.1512800305" id="branch">
+                    <option value="" className="options" selected disabled>
+                      Select Branch
+                    </option>
+                    <option value="AIDS" className="optionsinyear">
+                      AIDS
+                    </option>
+                    <option value="COMPS" className="optionsinyear">
+                      COMPS
+                    </option>
+                    <option value="IT" className="optionsinyear">
+                      IT
+                    </option>
+                    <option value="EXTC" className="optionsinyear">
+                      EXTC
+                    </option>
+                    <option value="CHEM" className="optionsinyear">
+                      CHEM
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="r_contact_flexo">
+                <label className="r_item1 r_form_text" for="phone_no">
+                  Phone no.
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="text"
+                  maxLength={10}
+                  id="phone_no"
+                  name="entry.1435771185"
+                  pattern="\d*"
+                  onInput={(e) => {
+                    e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                  }}
+                />
+              </div>
+
+              {/* <div className="r_contact_flexo">
+                <label for="pay" className="r_item1 r_form_text">
+                  pay:
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="email"
+                  name="entry.430290254"
+                  required
+                  id="email"
+                />
+              </div> */}
+              <div className="r_contact_flexo">
+                <label for="email" className="r_item1 r_form_text">
+                  Email:
+                </label>
+                <input
+                  className="r_item2 r_inputform"
+                  type="email"
+                  name="entry.1425523096"
+                  id="email"
+                />
+              </div>
+
+              <div className="r_submitform">
+                <button
+                  className="r_item7 r_inout btn"
+                  type="submit"
+                  value="Submit"
+                  disabled={isDisabled}
+                >
+                  Submit
+                </button>
+              </div>
+              <iframe
+                name="hidden_iframe"
+                ref={iframeRef}
+                title="Hidden Form Submission"
+                style={{ display: "none" }}
+                onLoad={handleIframeLoad}
+              ></iframe>
+            </div>
+          </form>
+        </motion.div>
+      </section>
+    </AnimatePresence>
+  );
+}
+
+export default Inquizition;
+

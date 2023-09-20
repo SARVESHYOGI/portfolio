@@ -22,7 +22,7 @@ function Skills() {
       <div className="w-full">
         <hr />
 
-        <div className="mt-2 mb-2">
+        <div className="leftpara mt-2 mb-2">
           <h1 className="text-6xl mt-2 mb-2">programming Language</h1>
           <div className="flex justify-around">
             <div>
@@ -37,7 +37,7 @@ function Skills() {
           </div>
         </div>
         <hr />
-        <div className="mt-2 mb-2">
+        <div className="rightpara mt-2 mb-2">
           <h1 className="text-6xl mt-2 mb-2"> frontend development</h1>
           <div className="flex justify-around gap-32 ">
             <div>
@@ -63,7 +63,7 @@ function Skills() {
         </div>
         <hr />
 
-        <div className="mt-2 mb-2">
+        <div className="leftpara mt-2 mb-2">
           <h1 className="text-6xl mt-2 mb-2">backend development</h1>
           <div className="flex justify-around ">
             <div>
@@ -79,7 +79,7 @@ function Skills() {
         </div>
         <hr />
 
-        <div className="mt-2 mb-2">
+        <div className="rightpara mt-2 mb-2">
           <h1 className="text-6xl mt-2 mb-2 ">framework</h1>
           <div className="flex justify-around gap-40">
             <div>

@@ -3,7 +3,7 @@ import React from "react";
 function Profile() {
   return (
     <div className="flex content-center items-center mx-auto justify-center">
-      <div className="bg h-3/4 text-white rounded-full w-3/4 font-bold text-2xl text-center self-center items-center flex p-20">
+      <div className="bg fadde h-3/4 text-white rounded-full w-3/4 font-bold text-2xl text-center self-center items-center flex p-20">
         Enthusiastic and versatile individual with a strong foundation in web
         development and programming. Proficient in HTML, CSS, JavaScript, and
         C/C++, I have successfully crafted interactive and visually appealing

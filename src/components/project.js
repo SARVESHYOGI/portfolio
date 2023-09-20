@@ -11,10 +11,10 @@ function Projects() {
   return (
     <div className="flex flex-col content-center justify-center items-center">
       <div className="flex h-screen items-center m-5">
-        <div className="projectimg bg-black text-white m-3 w-2/3">
+        <div className="leftpara projectimg bg-black text-white m-3 w-2/3">
           <img src={minithon} alt="c" className=" rounded-3xl bg-cover " />
         </div>
-        <div className=" text-gray-100 m-3 w-2/3">
+        <div className="rightpara text-gray-100 m-3 w-2/3">
           <h1 className="text-6xl m-3">CYBERRIDE HUB</h1>
           <p className=" text-xl">
             <span className="opacity-100">My first minithon</span>{" "}
@@ -30,10 +30,10 @@ function Projects() {
         </div>
       </div>
       <div className="flex h-screen items-center m-5">
-        <div className="projectimg bg-black text-white m-3 w-2/3">
+        <div className="leftpara projectimg bg-black text-white m-3 w-2/3">
           <img src={iete} alt="c" className=" rounded-3xl bg-cover" />
         </div>
-        <div className="  text-gray-100 m-3 w-2/3">
+        <div className="rightpara  text-gray-100 m-3 w-2/3">
           <h1 className="text-6xl m-3">IETE-TSEC</h1>
           <p className="opacity-60 text-xl">
             IETE-TSEC committee website made by group of seven team members, one
@@ -46,10 +46,10 @@ function Projects() {
         </div>
       </div>
       <div className="flex h-screen items-center m-5">
-        <div className="projectimg bg-black text-white m-3 w-2/3">
+        <div className="leftpara projectimg bg-black text-white m-3 w-2/3">
           <img src={port} alt="c" className=" rounded-3xl bg-cover" />
         </div>
-        <div className=" text-gray-100 m-2 w-2/3">
+        <div className="rightpara text-gray-100 m-2 w-2/3">
           <h1 className="text-6xl m-0"> PORTFOLIO</h1>
           <p className="opacity-60 text-xl">my selfmade portfolio</p>
           <p className="font-medium text-xl">
@@ -59,10 +59,10 @@ function Projects() {
         </div>
       </div>
       <div className="flex h-screen items-center m-5">
-        <div className="projectimg bg-black text-white m-3 w-2/3">
+        <div className=" leftpara projectimg bg-black text-white m-3 w-2/3">
           <img src={game} alt="c" className=" rounded-3xl bg-cover" />
         </div>
-        <div className=" text-gray-100 m-2 w-2/3">
+        <div className="rightpara text-gray-100 m-2 w-2/3">
           <h1 className="text-5xl m-0">ROCK-PAPER-SCISSORS GAME</h1>
           <p className="opacity-60 text-xl">
             the game base on full of basic of javascript , the creative
@@ -76,10 +76,10 @@ function Projects() {
       </div>
 
       <div className="flex h-screen items-center m-5">
-        <div className="projectimg bg-black text-white m-3 w-2/3">
+        <div className="leftpara projectimg bg-black text-white m-3 w-2/3">
           <img src={amazon} alt="c" className=" rounded-3xl bg-cover " />
         </div>
-        <div className=" text-gray-100 m-3 w-2/3">
+        <div className=" rightpara text-gray-100 m-3 w-2/3">
           <h1 className="text-6xl">AMAZON CLONE</h1>
           <p className="opacity-60 text-xl">
             the front page of amazon was created when i compleated learning html

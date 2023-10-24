@@ -13,12 +13,12 @@ import Contact from "./components/contact";
 function App() {
   return (
     <div>
-      <div
+      {/* <div
         id="but"
         className="bg-white to-blue-950 z-10 absolute top-8  right-16 "
       >
         sar
-      </div>
+      </div> */}
       <div
         id="app"
         className="m-0 p-0 flex min-h-screen flex-nowrap relative bg-blue-950"

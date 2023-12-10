@@ -1,4 +1,6 @@
 import React from "react";
+import "./components.css";
+
 import instagram from "../photo/instagram.jpg";
 import whatsapp from "../photo/whatsapp.png";
 import github from "../photo/github.png";

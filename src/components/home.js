@@ -1,10 +1,39 @@
 import React from "react";
+import "./components.css";
 
 function Home() {
   return (
     <div>
-      <div className="bg fadde rounded-full px-20 py-10 text-6xl w-fit mx-auto my-10 text-white">
-        HI , I'M SARVESH YOGI
+      <div className="bg fadde rounded-full px-20 py-10 text-6xl w-fit mx-auto my-10 text-white bg-fixed" >
+        <span className="mx-2">
+          <span className="hovere ">H</span>
+          <span className="hovere ">I</span>
+        </span>
+
+        <span className="mx-2">,</span>
+        <span className="mx-2">
+          <span className="hovere ">I</span>
+          <span className="hovere">'</span>
+          <span className="hovere">M</span>
+        </span>
+        <span className="mx-2">
+
+          <span className="hovere">S</span>
+          <span className="hovere">A</span>
+          <span className="hovere">R</span>
+          <span className="hovere">V</span>
+          <span className="hovere">E</span>
+          <span className="hovere">S</span>
+          <span className="hovere">H</span>
+        </span>
+        <span className="mx-2">
+
+          <span className="hovere">Y</span>
+          <span className="hovere">O</span>
+          <span className="hovere">G</span>
+          <span className="hovere">I</span>
+        </span>
+
       </div>
       <div className="flex faddee content-center items-center mx-auto justify-center">
         <div className="bg h-3/4 text-white rounded-full w-3/4 font-bold text-2xl text-center self-center items-center flex p-20">

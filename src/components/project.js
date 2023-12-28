@@ -2,13 +2,15 @@ import React, { useEffect } from "react";
 import { Element } from "react-scroll";
 
 import "./components.css";
-import "./script.js";
+import "./ParticleAnimation.js";
 
 import iete from "../photo/iete.png";
 import amazon from "../photo/amazonclane.png";
 import game from "../photo/game.png";
 import minithon from "../photo/minithon.png";
 import port from "../photo/portfilo.png";
+import Stopwatch from "../photo/Stopwatch.png";
+import vowel from "../photo/vowel.png";
 
 function Projects() {
   const handleScroll = () => {
@@ -50,7 +52,7 @@ function Projects() {
     <div className="flex flex-col content-center justify-center items-center">
       {/* Section 1 */}
 
-      <Element name="sec-1" className=" sec-1">
+      <Element name="sec-1" className="section sec-1">
         <div className="sec-1 flex h-screen items-center m-5">
           <div className="sectionL projectimg bg-black text-white m-3 w-full">
             <img src={minithon} alt="c" className="rounded-3xl bg-cover" />
@@ -115,7 +117,7 @@ function Projects() {
       {/* Section 4 */}
 
       <Element name="sec-4" className="section sec-4">
-        <div className="sec-3 flex h-screen items-center m-5">
+        <div className="sec-4 flex h-screen items-center m-5">
           <div className="sectionL projectimg bg-black text-white m-3 w-full">
             <img src={game} alt="c" className="rounded-3xl bg-cover" />
           </div>
@@ -126,8 +128,8 @@ function Projects() {
               my second year of engineering.
             </p>
             <p className="font-medium text-xl">
-              <span className="font-black">Tools used:</span> Javascript, HTML,
-              CSS
+              <span className="font-black">Tools used:</span> HTML, CSS,
+              JAVASCRIPT
             </p>
           </div>
         </div>
@@ -136,7 +138,50 @@ function Projects() {
       {/* Section 5 */}
 
       <Element name="sec-5" className="section sec-5">
-        <div className="sec-3 flex h-screen items-center m-5">
+        <div className="sec-5 flex h-screen items-center m-5">
+          <div className="sectionL projectimg bg-black text-white m-3 w-full">
+            <img src={Stopwatch} alt="c" className="rounded-3xl bg-cover" />
+          </div>
+          <div className="sectionR text-gray-100 m-3 w-2/3">
+            <h1 className="text-6xl">STOPWATCH</h1>
+            <p className="opacity-60 text-xl">
+              Created a sleek Stopwatch Timer using HTML, CSS, and JavaScript.
+              The minimalist design ensures user-friendly interaction, while
+              JavaScript powers accurate timing functionality
+            </p>
+            <p className="font-medium text-xl">
+              <span className="font-black">Tools used:</span> HTML, CSS,
+              JAVASCRIPT
+            </p>
+          </div>
+        </div>
+      </Element>
+
+      {/* Section 6 */}
+
+      <Element name="sec-6" className="section sec-6">
+        <div className="sec-6 flex h-screen items-center m-5">
+          <div className="sectionL projectimg bg-black text-white m-3 w-full">
+            <img src={vowel} alt="c" className="rounded-3xl bg-cover" />
+          </div>
+          <div className="sectionR text-gray-100 m-3 w-2/3">
+            <h1 className="text-6xl">VOWEL CHECKER</h1>
+            <p className="opacity-60 text-xl">
+              The simple interface allows you to input a word or sentence, and
+              the JavaScript code efficiently identifies and counts the vowels.
+            </p>
+            <p className="font-medium text-xl">
+              <span className="font-black">Tools used:</span> HTML, CSS,
+              JAVASCRIPT
+            </p>
+          </div>
+        </div>
+      </Element>
+
+      {/* Section 7 */}
+
+      <Element name="sec-7" className="section sec-7">
+        <div className="sec-7 flex h-screen items-center m-5">
           <div className="sectionL projectimg bg-black text-white m-3 w-full">
             <img src={amazon} alt="c" className="rounded-3xl bg-cover" />
           </div>

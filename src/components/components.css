@@ -138,11 +138,11 @@ body {
 
 .show-animateL {
   opacity: 1;
-  animation: slideIn 1s ease-out;
+  animation: slideIn 1.5s ease-out;
 }
 .show-animateR {
   opacity: 1;
-  animation: slideOut 1s ease-out;
+  animation: slideOut 1.5s ease-out;
 }
 
 @keyframes slideIn {

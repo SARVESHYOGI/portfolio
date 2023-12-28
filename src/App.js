@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+// import "./script.js";
 
 import Main from "./page/main";
 import { Routes, Route } from "react-router-dom";
@@ -13,12 +14,6 @@ import Contact from "./components/contact";
 function App() {
   return (
     <div>
-      {/* <div
-        id="but"
-        className="bg-white to-blue-950 z-10 absolute top-8  right-16 "
-      >
-        sar
-      </div> */}
       <div
         id="app"
         className="m-0 p-0 flex min-h-screen flex-nowrap relative bg-blue-950"
@@ -31,7 +26,7 @@ function App() {
           <div id="right" className="ml-52">
             <Routes>
               <Route path="/" Component={Home} />
-              <Route path="/home" Component={Home} />
+              {/* <Route path="/home" Component={Home} /> */}
               <Route path="/profile" Component={Profile} />
               <Route path="/project" Component={Project} />
               <Route path="/certificate" Component={Certificate} />

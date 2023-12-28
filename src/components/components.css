@@ -1,14 +1,16 @@
+body {
+  overflow-x: hidden;
+}
 .boxmanual {
   opacity: 0.7;
   box-sizing: border-box;
   box-shadow: 5px 5px 20px #ffffff;
-}
-.boxmanual {
   position: relative;
   height: 20rem;
   box-sizing: content-box;
   transition: height 0.5s ease;
 }
+
 .boxmanual > img {
   height: 20rem;
   box-sizing: content-box;
@@ -62,6 +64,33 @@
   );
 }
 
+@keyframes fadde {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadde {
+  animation-name: fadde;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.faddee {
+  animation-name: fadde;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+.hovere:hover {
+  color: rgb(255, 255, 255);
+  transform: translateY(30%);
+  scale: 3;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
 .leftpara {
   overflow: auto;
   animation-name: slide;
@@ -92,29 +121,47 @@
     transform: translateX(0);
   }
 }
-@keyframes fadde {
+
+.sectionR {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.sectionL {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.show-animateL {
+  opacity: 1;
+  animation: slideIn 1s ease-out;
+}
+.show-animateR {
+  opacity: 1;
+  animation: slideOut 1s ease-out;
+}
+
+@keyframes slideIn {
   from {
     opacity: 0;
+    transform: translateX(200%);
   }
   to {
     opacity: 1;
+    transform: translateX(0);
   }
 }
-
-.fadde {
-  animation-name: fadde;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
-.faddee {
-  animation-name: fadde;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-}
-.hovere:hover {
-  color: rgb(255, 255, 255);
-  transform: translateY(30%);
-  scale: 3;
-  cursor: pointer;
-  font-weight: bolder;
+@keyframes slideOut {
+  from {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

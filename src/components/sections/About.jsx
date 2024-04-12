@@ -1,4 +1,4 @@
-import about from "../../assets/about.jpeg";
+import about from "../../assets/react.svg";
 import { skills } from "../../utilities/constants";
 import { motion } from "framer-motion";
 
@@ -55,7 +55,7 @@ const About = () => {
                     </p>
                     <p className="mb-3">
                         I possess a keen interest in leveraging Data Structures and
-                        Algorithms using <span className="text-themeBlue">Java</span>. I
+                        Algorithms using <span className="text-themeBlue">C++</span>. I
                         actively participate in coding contests to continually refine my
                         skills.
                     </p>

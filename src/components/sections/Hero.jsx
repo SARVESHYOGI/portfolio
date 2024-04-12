@@ -1,4 +1,4 @@
-import Profile from "../../assets/profile-pic.jpeg";
+import Profile from "../../assets/react.svg";
 import ButtonLink from "../shared/ButtonLink";
 import { motion } from "framer-motion";
 
@@ -26,7 +26,7 @@ const Hero = () => {
                         viewport={{ once: true }}
                         className="text-clamp2 m-0 font-bold text-primaryText font-fontHeading"
                     >
-                        Yash Gupta.
+                        Sarvesh Yogi.
                     </motion.h2>
                     <motion.h3
                         initial={{ opacity: 0, y: 15 }}
@@ -45,7 +45,7 @@ const Hero = () => {
                         className="text-center lg:text-left m-0 mt-[20px] text-secondaryText font-fontParagraph"
                     >
                         I'm a passionate Full Stack developer specialized in building
-                        exceptional web apps from New Delhi, India 📍
+                        exceptional web apps from Mumbai, India 📍
                     </motion.p>
                     <ButtonLink
                         content="Get In Touch!"

@@ -27,7 +27,7 @@ const Contact = () => {
             </p>
             <ButtonLink
                 content="Say Hello"
-                url="mailto:thisisyashgpt@gmail.com"
+                url="mailto:sarveshyogi2005@gmail.com"
                 classNameBox="mt-[50px]"
                 classNameBtn="px-7 !py-4 !font-fontHeading tracking-widest"
             />

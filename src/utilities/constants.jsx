@@ -37,31 +37,31 @@ export const skills = [
 
 export const social_links = [
     {
-        url: "https://github.com/yash2324/",
+        url: "https://github.com/SARVESHYOGI",
         icon: <LuGithub className="w-[22px] h-[22px]" />,
         name: "Github",
     },
     {
-        url: "https://www.linkedin.com/in/thisisyashgupta/",
+        url: "www.linkedin.com/in/sarveshyogi",
         icon: <LuLinkedin className="w-[22px] h-[22px]" />,
         name: "Linkedin",
     },
     {
-        url: "https://twitter.com/yashgupta023",
+        url: "https://twitter.com/SarveshYogi9305",
         icon: <FaXTwitter className="w-[22px] h-[22px]" />,
         name: "Twitter",
     },
     {
-        url: "https://drive.google.com/file/d/1w_AY_fYKSz_Dp9UXZb-nc5JpUIy6cLBF/view",
+        url: "https://drive.google.com/file/d/1CfSNx24TWPlNl31VkfAWfaPIutENaGpN/view?usp=drive_link",
         icon: <IoMdDocument className="w-[22px] h-[22px]" />,
         name: "Resume",
     },
 
-    // {
-    //   url: "https://leetcode.com/yg232004/",
-    //   icon: <SiLeetcode className="w-[22px] h-[22px]" />,
-    //   name: "Leetcode",
-    // },
+    {
+        url: "https://leetcode.com/sarveshyogi2005/",
+        icon: <SiLeetcode className="w-[22px] h-[22px]" />,
+        name: "Leetcode",
+    },
 ];
 
 export const mainProjects = [

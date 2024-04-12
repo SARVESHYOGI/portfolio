@@ -23,12 +23,12 @@ const Footer = () => {
             </div>
             <div className="text-secondaryText font-mono text-sm leading-4">
                 <a
-                    href="https://github.com/yash2324"
+                    href="https://github.com/SARVESHYOGI"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-[10px] hover:text-themeBlue transition-all duration-200"
                 >
-                    <div> Yash Gupta</div>
+                    <div> Sarvesh Yogi</div>
                 </a>
             </div>
         </footer>

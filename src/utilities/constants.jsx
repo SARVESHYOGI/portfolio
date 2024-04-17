@@ -23,11 +23,11 @@ export const navLinks = [
 ];
 
 export const skills = [
-    "Java",
-    "JavaScript (ES+)",
+    "C++",
+    "JavaScript (ES6+)",
     "React Js",
     "Redux Toolkit",
-    "Tailwind",
+    "Tailwind css",
     "API Handling",
     "Node.js",
     "Express.js",

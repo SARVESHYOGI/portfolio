@@ -42,13 +42,13 @@ const SocialLinks = () => {
             >
                 <div className="flex flex-col items-center relative">
                     <a
-                        href="mailto:thisisyashgpt@gmail.com"
+                        href="mailto:sarveshyogi2005@gmail.com"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="font-mono text-sm my-[20px] mx-auto p-[10px] tracking-widest transition hover:-translate-y-[3px] duration-300 text-secondaryText hover:text-themeBlue"
                         style={{ writingMode: "vertical-rl" }}
                     >
-                        thisisyashgpt@gmail.com
+                        sarveshyogi2005@gmail.com
                     </a>
                 </div>
 

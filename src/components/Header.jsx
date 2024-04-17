@@ -32,11 +32,12 @@ const Header = () => {
                         className="w-14 cursor-pointer transition-all hover:-translate-x-[4px] hover:-translate-y-[4px]"
                         onClick={toTop}
                     >
-                        <img
+                        {/* <img
                             src="https://res.cloudinary.com/dljzvv5dh/image/upload/v1709129503/Portfolio/ydrhy6ko8qbiclqxykfi.png"
                             alt="TD"
                             className="w-full h-full transition-all hover:drop-shadow-buttonShadow"
-                        />
+                        /> */}
+                        SY
                     </motion.div>
                     <div className="hidden items-center md:flex">
                         <ol className={olStyle}>
@@ -121,7 +122,8 @@ const Header = () => {
                     </ol>
                     <ButtonLink
                         content="Resume"
-                        url="https://drive.google.com/file/d/1w_AY_fYKSz_Dp9UXZb-nc5JpUIy6cLBF/view"
+                        url="https://drive.google.com/file/d/1CfSNx24TWPlNl31VkfAWfaPIutENaGpN/view?usp=drive_link"
+
                         classNameBox="mt-[15px]"
                     />
                 </nav>

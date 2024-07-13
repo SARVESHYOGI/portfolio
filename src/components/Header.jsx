@@ -19,6 +19,52 @@ const Header = () => {
 
     return (
         <>
+            {/* Mobile Menu */}
+            <div
+                className={`${mainBoxStyle} h-full z-50 justify-center transition-all duration-200 ${isMenuOpen ? "right-0" : "right-full"
+                    }`}
+            >
+                <motion.div
+                    className="absolute top-10 right-10 cursor-pointer z-[51]"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
+                    whileInView={{ opacity: 1 }}
+                >
+                    <IoClose className="text-themeBlue text-3xl hover:brightness-50" />
+                </motion.div>
+                <nav className="flex flex-col items-center gap-4 justify-center relative w-full h-full text-primaryText">
+                    <ol className={`${olStyle} flex-col`}>
+                        {navLinks &&
+                            navLinks.map(({ url, name }, idx) => (
+                                <motion.li
+                                    key={idx}
+                                    className=" p-[10px] text-lg flex flex-col items-center font-mono tracking-wide"
+                                    onClick={() => setIsMenuOpen(false)}
+                                    initial={{ opacity: 0, x: -15 }}
+                                    transition={{ delay: 0.2 + idx / 20, duration: 0.3 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                >
+                                    <span className="text-themeBlue text-base mr-1">
+                                        0{idx + 1}.
+                                    </span>
+                                    <a
+                                        href={url}
+                                        className="hover:text-themeBlue transition-all duration-200"
+                                    >
+                                        {name}
+                                    </a>
+                                </motion.li>
+                            ))}
+                    </ol>
+                    <ButtonLink
+                        content="Resume"
+                        url="https://drive.google.com/file/d/1CfSNx24TWPlNl31VkfAWfaPIutENaGpN/view?usp=drive_link"
+
+                        classNameBox="mt-[15px]"
+                    />
+                </nav>
+            </div>
             {/* Desktop */}
             <div
                 className={`${mainBoxStyle} justify-between z-[11] h-[100px] backdrop-blur-md py-0 px-4 md:px-12 bg-opacity-75`}
@@ -82,52 +128,7 @@ const Header = () => {
                 </nav>
             </div>
 
-            {/* Mobile Menu */}
-            <div
-                className={`${mainBoxStyle} h-full z-50 justify-center transition-all duration-200 ${isMenuOpen ? "right-0" : "right-full"
-                    }`}
-            >
-                <motion.div
-                    className="absolute top-10 right-10 cursor-pointer z-[51]"
-                    onClick={() => setIsMenuOpen(false)}
-                    initial={{ opacity: 0 }}
-                    transition={{ delay: 0.5, duration: 0.5 }}
-                    whileInView={{ opacity: 1 }}
-                >
-                    <IoClose className="text-themeBlue text-3xl hover:brightness-50" />
-                </motion.div>
-                <nav className="flex flex-col items-center gap-4 justify-center relative w-full h-full text-primaryText">
-                    <ol className={`${olStyle} flex-col`}>
-                        {navLinks &&
-                            navLinks.map(({ url, name }, idx) => (
-                                <motion.li
-                                    key={idx}
-                                    className=" p-[10px] text-lg flex flex-col items-center font-mono tracking-wide"
-                                    onClick={() => setIsMenuOpen(false)}
-                                    initial={{ opacity: 0, x: -15 }}
-                                    transition={{ delay: 0.2 + idx / 20, duration: 0.3 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                >
-                                    <span className="text-themeBlue text-base mr-1">
-                                        0{idx + 1}.
-                                    </span>
-                                    <a
-                                        href={url}
-                                        className="hover:text-themeBlue transition-all duration-200"
-                                    >
-                                        {name}
-                                    </a>
-                                </motion.li>
-                            ))}
-                    </ol>
-                    <ButtonLink
-                        content="Resume"
-                        url="https://drive.google.com/file/d/1CfSNx24TWPlNl31VkfAWfaPIutENaGpN/view?usp=drive_link"
 
-                        classNameBox="mt-[15px]"
-                    />
-                </nav>
-            </div>
         </>
     );
 };

@@ -16,9 +16,6 @@ function App() {
       clearTimeout(timeout);
     };
   }, []);
-
-
-
   return (
     <AnimatePresence mode="wait">
       {logoLoader ? (

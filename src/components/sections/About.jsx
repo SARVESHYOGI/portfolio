@@ -1,4 +1,4 @@
-import about from "../../assets/react.svg";
+import about from "../../assets/sasas.jpg";
 import { skills } from "../../utilities/constants";
 import { motion } from "framer-motion";
 
@@ -21,11 +21,11 @@ const About = () => {
                 <div className="block md:hidden w-full h-[1px] bg-blue-400/20 relative top-[5px] ml-[10px] "></div>
             </div>
             <div className="flex justify-center lg:justify-between place-items-start gap-10 flex-wrap-reverse md:flex-nowrap">
-                <div className="group w-full max-w-[300px] relative h-[340px]">
-                    <div className="absolute top-[14px] right-[14px] w-full h-[320px] border-2  rounded-lg transition-all duration-200  group-hover:top-[24px] group-hover:right-[24px]"></div>
-                    <div className="block relative w-full  max-h-[400px] h-[320px] rounded-lg transition-all duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
+                <div className="group w-full max-w-[300px] border-themeBlue relative h-[340px]">
+                    <div className="absolute top-[14px]  right-[14px] w-full h-[320px] border-2  rounded-lg transition-all duration-200  group-hover:top-[24px] group-hover:right-[24px]"></div>
+                    <div className="block relative w-full border-themeBlue  max-h-[400px] h-[320px] rounded-lg transition-all duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">
                         <div
-                            className="w-full h-full bg-no-repeat rounded-lg relative z-[1]  transition-all duration-300   group-hover:filter-none"
+                            className="w-full h-full bg-no-repeat rounded-lg relative z-[1] border-themeBlue  transition-all duration-300   group-hover:filter-none"
                             style={{
                                 backgroundImage: `url(${about})`,
                                 backgroundPosition: "center 25%",

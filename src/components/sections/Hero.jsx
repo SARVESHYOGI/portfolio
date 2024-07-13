@@ -1,4 +1,4 @@
-import Profile from "../../assets/react.svg";
+import Profile from "../../assets/sasa.png";
 import ButtonLink from "../shared/ButtonLink";
 import { motion } from "framer-motion";
 

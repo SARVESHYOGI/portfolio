@@ -12,7 +12,7 @@ module.exports = {
         lg: "1080px"
       },
       colors: {
-        mainBg: "#0A192F",
+        mainBg: "#06101f",
         primaryText: "#CCD6F6",
         secondaryText: "#8892B0",
         themeBlue: "#64FFDA",

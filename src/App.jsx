@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLogoLoader(false);
-    }, 2500);
+    }, 2000);
 
     return () => {
       clearTimeout(timeout);

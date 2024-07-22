@@ -6,7 +6,7 @@ const AnimatedText = ({ text }) => {
     const delayIncrement = duration / numChars; // Delay between each character
 
     return (
-        <div className="text-white text-2xl md:text-[3rem] lg:text-[8rem] tracking-[2rem] m-2">
+        <div className="text-white text-2xl md:text-[3rem] lg:text-[8rem] tracking-[2rem] m-5 lg:m-11">
             {text.split('').map((char, index) => (
                 <motion.span
                     key={index}

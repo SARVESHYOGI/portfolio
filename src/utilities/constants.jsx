@@ -57,11 +57,11 @@ export const social_links = [
         name: "Resume",
     },
 
-    {
-        url: "https://leetcode.com/sarvesh2005/",
-        icon: <SiLeetcode className="w-[22px] h-[22px]" />,
-        name: "Leetcode",
-    },
+    //{
+       // url: "https://leetcode.com/sarvesh2005/",
+        //icon: <SiLeetcode className="w-[22px] h-[22px]" />,
+    // name: "Leetcode",
+   // },
 ];
 
 export const mainProjects = [

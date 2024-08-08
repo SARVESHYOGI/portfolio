@@ -59,7 +59,7 @@ const Header = () => {
                     </ol>
                     <ButtonLink
                         content="Resume"
-                        url="https://drive.google.com/file/d/1CfSNx24TWPlNl31VkfAWfaPIutENaGpN/view?usp=drive_link"
+                        url="https://drive.google.com/file/d/1Kbnne-t-Xm6dR0_7gf1oAouOH0sDiFry/view?usp=sharing"
 
                         classNameBox="mt-[15px]"
                     />

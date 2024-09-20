@@ -19,13 +19,13 @@ const Projects = () => {
                 id="projects"
                 className="my-[100px] md:my-0 mx-auto py-[100px] md:mx-0"
             >
-                <div className="flex items-center justify-start relative mt-[10px] mb-[40px] mx-0 w-full whitespace-nowrap text-sectionHeading text-primaryText font-bold">
-                    <span className="relative -bottom-1 text-themeBlue font-mono text-smallSize font-semibold mr-[10px]">
+                <div className="flex items-center justify-start relative mt-[10px] mb-[40px] mx-0 w-full whitespace-nowrap text-sectionHeading text-primaryText dark:text-lightpText font-bold">
+                    <span className="relative -bottom-1 text-themeBlue dark:text-lightTheme font-mono text-smallSize font-semibold mr-[10px]">
                         03.
                     </span>
                     <h2 className="text-sectionHeading">Some Things I've Built</h2>
-                    <div className="block sm:hidden w-full h-[1px] bg-blue-400/20 relative top-[5px] ml-[10px] "></div>
-                    <div className="hidden sm:block w-full md:w-[200px] lg:w-[300px] h-[1px] bg-blue-400/20 relative top-[5px] ml-[20px]"></div>
+                    <div className="block sm:hidden w-full h-[1px] bg-blue-400/20 dark:bg-orange-500/20 relative top-[5px] ml-[10px] "></div>
+                    <div className="hidden sm:block w-full md:w-[200px] lg:w-[300px] h-[1px] bg-blue-400/20 dark:bg-orange-500/20 relative top-[5px] ml-[20px]"></div>
                 </div>
 
                 <ul className="list-none p-0 m-0 w-full">
@@ -48,7 +48,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 whileInView={{ opacity: 1, y: 0 }}
             >
-                <h2 className="text-sectionHeading m-0 mb-[10px] font-bold text-primaryText leading-[1.1]">
+                <h2 className="text-sectionHeading m-0 mb-[10px] font-bold text-primaryText dark:text-lightpText leading-[1.1]">
                     Other Noteworthy Projects
                 </h2>
 
@@ -61,7 +61,7 @@ const Projects = () => {
 
                 <button
                     type="button"
-                    className="font-mono leading-4 text-themeBlue bg-transparent border border-themeBlue rounded-[4px] px-7 py-5 mx-auto mt-[80px] text-[14px] transition-all ease-in-out duration-300 hover:shadow-buttonShadow hover:-translate-x-1 hover:-translate-y-1"
+                    className="font-mono leading-4 text-themeBlue dark:text-lightTheme bg-transparent border border-themeBlue dark:border-lightTheme rounded-[4px] px-7 py-5 mx-auto mt-[80px] text-[14px] transition-all ease-in-out duration-300 hover:shadow-buttonShadow hover:-translate-x-1 hover:-translate-y-1"
                     onClick={() => setShowMore(!showMore)}
                 >
                     Show {showMore ? "Less" : "More"}

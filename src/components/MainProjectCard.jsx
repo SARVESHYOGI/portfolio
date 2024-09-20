@@ -17,24 +17,24 @@ const MainProjectCard = ({
         >
             <div
                 className={`p-[25px] pb-[20px] !col-full ${idx % 2 === 0
-                        ? "md:!col-mdScreenRev lg:!col-lgScreen md:text-right"
-                        : "md:!col-mdScreen lg:!col-lgContent"
+                    ? "md:!col-mdScreenRev lg:!col-lgScreen md:text-right"
+                    : "md:!col-mdScreen lg:!col-lgContent"
                     } sm:p-[40px] sm:pb-[30px]  flex flex-col justify-center h-full z-[5] md:block md:h-auto relative`}
                 style={{
                     gridArea: "1 / 1 / -1 / 7",
                 }}
             >
-                <p className="my-[10px] text-themeBlue font-mono text-sm font-semibold tracking-wider">
+                <p className="my-[10px] text-themeBlue dark:text-lightTheme font-mono text-sm font-semibold tracking-wider">
                     Featured Project
                 </p>
 
-                <h3 className="text-primaryText font-bold leading-[1.1] text-sectionHeading transition-all duration-200 hover:text-themeBlue font-fontHeading md:mb-[20px]">
+                <h3 className="text-primaryText dark:text-lightpText font-bold leading-[1.1] text-sectionHeading transition-all duration-200 hover:text-themeBlue dark:hover:text-lightTheme font-fontHeading md:mb-[20px]">
                     <a href={demo} target="_blank" rel="noopener noreferrer">
                         {title}
                     </a>
                 </h3>
 
-                <div className="shadow-none md:shadow-aboutShadow transition-all duration-200 relative z-[2] py-[20px] md:p-[25px] rounded text-secondaryText text-base bg-transparent md:bg-[#112240] font-fontParagraph md:hover:shadow-bigShadow">
+                <div className="shadow-none md:shadow-aboutShadow transition-all duration-200 relative z-[2] py-[20px] md:p-[25px] rounded text-secondaryText dark:text-lightsText text-base bg-transparent md:bg-[#112240] md:dark:bg-[#ebf3fe] font-fontParagraph md:hover:shadow-bigShadow">
                     <p>{description}</p>
                 </div>
 
@@ -45,7 +45,7 @@ const MainProjectCard = ({
                     {tags.map((tag, i) => (
                         <li
                             key={i}
-                            className="font-mono whitespace-nowrap text-sm text-secondaryText mr-[10px] mb-[5px] md:mr-[20px] md:mb-[5px]"
+                            className="font-mono whitespace-nowrap text-sm text-secondaryText dark:text-lightsText mr-[10px] mb-[5px] md:mr-[20px] md:mb-[5px]"
                         >
                             {tag}
                         </li>
@@ -54,11 +54,14 @@ const MainProjectCard = ({
 
                 <div
                     className={`flex items-center relative mt-[10px] ml-[10px] ${idx % 2 === 0 && "md:justify-end md:ml-0 md:mr-[10px]"
-                        } text-primaryText text-[22px]`}
+                        } text-primaryText dark:text-lightpText
+ text-[22px]`}
                 >
                     <a
                         href={github}
-                        className="flex justify-center items-center p-[10px] transition-all duration-200 hover:text-themeBlue"
+                        className="flex justify-center items-center p-[10px] transition-all duration-200 hover:text-themeBlue
+                        dark:hover:text-lightTheme
+                        "
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -66,7 +69,8 @@ const MainProjectCard = ({
                     </a>
                     <a
                         href={demo}
-                        className="flex justify-center items-center p-[10px] transition-all duration-200 hover:text-themeBlue"
+                        className="flex justify-center items-center p-[10px] transition-all duration-200 hover:text-themeBlue
+                        dark:hover:text-lightTheme"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -77,8 +81,8 @@ const MainProjectCard = ({
 
             <div
                 className={`!col-full h-full opacity-25 ${idx % 2 === 0
-                        ? "md:!col-lgScreenRev"
-                        : "md:!col-lgScreen lg:!col-lgImage"
+                    ? "md:!col-lgScreenRev"
+                    : "md:!col-lgScreen lg:!col-lgImage"
                     } md:h-auto md:opacity-100 shadow-aboutShadow transition-all duration-200 relative`}
                 style={{
                     gridArea: "1 / 6 / -1 / -1",
@@ -90,7 +94,7 @@ const MainProjectCard = ({
                     rel="noopener noreferrer"
                     className="h-full"
                 >
-                    <div className="group w-full relative max-w-[700px] h-full">
+                    <div className="group w-full relative max-w-[712px] h-full">
                         <div className="block relative w-full  shadow-aboutShadow  rounded-lg transition-all duration-500  h-full z-[3]">
                             <img
                                 className="w-full md:w-full h-full min-h-[400px] bg-no-repeat rounded-lg relative object-cover transition-all duration-500 mix-blend-multiply brightness-50 md:brightness-95   group-hover:mix-blend-normal group-hover:filter-none opacity-85 md:opacity-100 z-[4]"

@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {
@@ -12,6 +13,10 @@ module.exports = {
         lg: "1080px"
       },
       colors: {
+        lightmBg: "#F5F7FA",
+        lightpText: "#0A1A33",
+        lightsText: "#4C5B6B",
+        lightTheme: "#007ACC",
         mainBg: "#06101f",
         primaryText: "#CCD6F6",
         secondaryText: "#8892B0",

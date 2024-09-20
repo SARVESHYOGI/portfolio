@@ -15,7 +15,7 @@ const Hero = () => {
                         transition={{ delay: 0.2, duration: 0.5 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-themeBlue text-clamp1 tracking-wider leading-loose font-mono font-normal ml-[2px]  sm:ml-[3px]"
+                        className="text-themeBlue dark:text-lightTheme text-clamp1 tracking-wider leading-loose font-mono font-normal ml-[2px]  sm:ml-[3px]"
                     >
                         Hi, my name is
                     </motion.h1>
@@ -24,7 +24,7 @@ const Hero = () => {
                         transition={{ delay: 0.3, duration: 0.5 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-clamp2 m-0 font-bold text-primaryText font-fontHeading"
+                        className="text-clamp2 m-0 font-bold text-primaryText dark:text-lightpText font-fontHeading"
                     >
                         Sarvesh Yogi.
                     </motion.h2>
@@ -33,7 +33,7 @@ const Hero = () => {
                         transition={{ delay: 0.4, duration: 0.5 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-center lg:text-left text-clamp2 text-secondaryText font-bold font-fontHeading"
+                        className="text-center lg:text-left text-clamp2 text-secondaryText dark:text-lightsText font-bold font-fontHeading"
                     >
                         Full Stack Developer & DSA Enthusiast
                     </motion.h3>
@@ -42,7 +42,7 @@ const Hero = () => {
                         transition={{ delay: 0.5, duration: 0.5 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-center lg:text-left m-0 mt-[20px] text-secondaryText font-fontParagraph"
+                        className="text-center lg:text-left m-0 mt-[20px] text-secondaryText dark:text-lightsText font-fontParagraph"
                     >
                         I'm a passionate Full Stack developer specialized in building
                         exceptional web apps from Mumbai, India 📍
@@ -63,7 +63,7 @@ const Hero = () => {
                     className="w-[15rem] h-[15rem] sm:w-[18rem] sm:h-[18rem]"
                 >
                     <div
-                        className="w-full h-full rounded-custom animate-morph border border-themeBlue bg-no-repeat"
+                        className="w-full h-full rounded-custom animate-morph border border-themeBlue dark:border-lightTheme bg-no-repeat"
                         style={{
                             backgroundImage: `url(${Profile})`,
                             backgroundPosition: "center center",

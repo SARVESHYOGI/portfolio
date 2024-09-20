@@ -58,10 +58,10 @@ export const social_links = [
     },
 
     //{
-       // url: "https://leetcode.com/sarvesh2005/",
-        //icon: <SiLeetcode className="w-[22px] h-[22px]" />,
+    // url: "https://leetcode.com/sarvesh2005/",
+    //icon: <SiLeetcode className="w-[22px] h-[22px]" />,
     // name: "Leetcode",
-   // },
+    // },
 ];
 
 export const mainProjects = [
@@ -95,16 +95,16 @@ export const mainProjects = [
     },
 
 
-    {
-        title: "TODOS",
-        description:
-            " Created a fully functional to-do application using React, Redux, and Tailwind CSS. The app features intuitive task management, real-time updates, and a sleek user interface. It demonstrates my ability to build efficient and user-friendly applications.",
-        tags: ["React.js", "Redux", "HTML", "Tailwind-CSS", "JavaScript"],
-        github: "https://github.com/SARVESHYOGI/TodoinReact",
-        demo: "https://todoisnreact-nu.vercel.app/",
-        image:
-            "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666312/Screenshot_2024-07-22_175248_kbqbhr.png",
-    },
+    // {
+    //     title: "TODOS",
+    //     description:
+    //         " Created a fully functional to-do application using React, Redux, and Tailwind CSS. The app features intuitive task management, real-time updates, and a sleek user interface. It demonstrates my ability to build efficient and user-friendly applications.",
+    //     tags: ["React.js", "Redux", "HTML", "Tailwind-CSS", "JavaScript"],
+    //     github: "https://github.com/SARVESHYOGI/TodoinReact",
+    //     demo: "https://todoisnreact-nu.vercel.app/",
+    //     image:
+    //         "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666312/Screenshot_2024-07-22_175248_kbqbhr.png",
+    // },
 ];
 
 export const otherProjects = [
@@ -134,6 +134,16 @@ export const otherProjects = [
         tags: ["Reactjs", "Node.js", "Express", "MongoDB"],
         github: "https://github.com/SARVESHYOGI/blog",
         demo: "https://blog-88o5l6n6k-sarvesh-yogis-projects.vercel.app/",
+    },
+    {
+        title: "TODOS",
+        description:
+            " Created a fully functional to-do application using React, Redux, and Tailwind CSS. The app features intuitive task management, real-time updates, and a sleek user interface. It demonstrates my ability to build efficient and user-friendly applications.",
+        tags: ["React.js", "Redux", "HTML", "Tailwind-CSS", "JavaScript"],
+        github: "https://github.com/SARVESHYOGI/TodoinReact",
+        demo: "https://todoisnreact-nu.vercel.app/",
+        image:
+            "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666312/Screenshot_2024-07-22_175248_kbqbhr.png",
     },
     {
         title: "Git-Profile-Checker",

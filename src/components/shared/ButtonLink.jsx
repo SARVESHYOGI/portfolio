@@ -17,7 +17,7 @@ const ButtonLink = ({
         >
             <a
                 href={url}
-                className={`font-mono text-themeBlue bg-transparent border border-themeBlue rounded-[4px] py-[10px] px-4 text-[14px] transition-all ease-in-out duration-300 hover:shadow-buttonShadow ${classNameBtn}`}
+                className={`font-mono text-themeBlue dark:text-lightTheme bg-transparent border border-themeBlue dark:border-lightTheme rounded-[4px] py-[10px] px-4 text-[14px] transition-all ease-in-out duration-300 hover:shadow-buttonShadow ${classNameBtn}`}
                 target={blank ? "_blank" : "_self"}
             >
                 {content}

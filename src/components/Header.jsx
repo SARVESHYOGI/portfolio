@@ -7,10 +7,11 @@ import ButtonLink from "./shared/ButtonLink";
 import { navLinks } from "../utilities/constants";
 
 import { motion } from "framer-motion";
+import Theme from "./Theme";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const mainBoxStyle = "flex items-center fixed top-0 w-full bg-mainBg";
+    const mainBoxStyle = "flex items-center fixed top-0 w-full bg-mainBg dark:bg-lightmBg";
     const olStyle = "flex justify-between items-center p-0 m-0 list-none";
 
     const toTop = () => {
@@ -31,9 +32,9 @@ const Header = () => {
                     transition={{ delay: 0.5, duration: 0.5 }}
                     whileInView={{ opacity: 1 }}
                 >
-                    <IoClose className="text-themeBlue text-3xl hover:brightness-50" />
+                    <IoClose className="text-themeBlue dark:text-lightTheme text-3xl hover:brightness-50" />
                 </motion.div>
-                <nav className="flex flex-col items-center gap-4 justify-center relative w-full h-full text-primaryText">
+                <nav className="flex flex-col items-center gap-4 justify-center relative w-full h-full text-primaryText dark:text-lightpText">
                     <ol className={`${olStyle} flex-col`}>
                         {navLinks &&
                             navLinks.map(({ url, name }, idx) => (
@@ -45,12 +46,12 @@ const Header = () => {
                                     transition={{ delay: 0.2 + idx / 20, duration: 0.3 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
-                                    <span className="text-themeBlue text-base mr-1">
+                                    <span className="text-themeBlue dark:text-lightTheme text-base mr-1">
                                         0{idx + 1}.
                                     </span>
                                     <a
                                         href={url}
-                                        className="hover:text-themeBlue transition-all duration-200"
+                                        className="hover:text-themeBlue dark:hover:text-lightTheme transition-all duration-200"
                                     >
                                         {name}
                                     </a>
@@ -61,15 +62,16 @@ const Header = () => {
                         content="Resume"
                         url="https://drive.google.com/file/d/1Kbnne-t-Xm6dR0_7gf1oAouOH0sDiFry/view?usp=sharing"
 
-                        classNameBox="mt-[15px]"
+                        classNameBox="my-[15px]"
                     />
+                    <Theme />
                 </nav>
             </div>
             {/* Desktop */}
             <div
                 className={`${mainBoxStyle} justify-between z-[11] h-[100px] backdrop-blur-md py-0 px-4 md:px-12 bg-opacity-75`}
             >
-                <nav className="flex justify-between items-center relative w-full text-primaryText font-fontParagraph z-[12]">
+                <nav className="flex justify-between items-center relative w-full text-primaryText dark:text-lightpText font-fontParagraph z-[12]">
                     <motion.div
                         initial={{ opacity: 0, y: -5 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
@@ -78,11 +80,7 @@ const Header = () => {
                         className="w-14 cursor-pointer transition-all hover:-translate-x-[4px] hover:-translate-y-[4px]"
                         onClick={toTop}
                     >
-                        {/* <img
-                            src="https://res.cloudinary.com/dljzvv5dh/image/upload/v1709129503/Portfolio/ydrhy6ko8qbiclqxykfi.png"
-                            alt="TD"
-                            className="w-full h-full transition-all hover:drop-shadow-buttonShadow"
-                        /> */}
+
                         SY
                     </motion.div>
                     <div className="hidden items-center md:flex">
@@ -97,12 +95,12 @@ const Header = () => {
                                         viewport={{ once: true }}
                                         className="p-[10px] my-0 mx-1 relative text-smallSize font-mono tracking-wide"
                                     >
-                                        <span className="text-themeBlue mr-1 text-[12px]">
+                                        <span className="text-themeBlue dark:text-lightTheme mr-1 text-[12px]">
                                             0{idx + 1}.
                                         </span>
                                         <a
                                             href={url}
-                                            className="hover:text-themeBlue transition-all duration-200 text-[14px]"
+                                            className="hover:text-themeBlue dark:hover:text-lightTheme transition-all duration-200 text-[14px]"
                                         >
                                             {name}
                                         </a>
@@ -114,6 +112,8 @@ const Header = () => {
                             url="https://drive.google.com/file/d/1Kbnne-t-Xm6dR0_7gf1oAouOH0sDiFry/view?usp=sharing"
                             classNameBox="ml-[15px]"
                         />
+                        {/* <Theme /> */}
+
                     </div>
                     <motion.div
                         className="flex items-center md:hidden cursor-pointer"
@@ -123,8 +123,9 @@ const Header = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <BiMenuAltRight className="text-themeBlue text-4xl hover:brightness-50" />
+                        <BiMenuAltRight className="text-themeBlue dark:text-lightTheme text-4xl hover:brightness-50" />
                     </motion.div>
+
                 </nav>
             </div>
 

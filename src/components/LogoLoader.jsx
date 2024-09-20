@@ -6,7 +6,7 @@ const AnimatedText = ({ text }) => {
     const delayIncrement = duration / numChars; // Delay between each character
 
     return (
-        <div className="text-white text-2xl md:text-[3rem] lg:text-[8rem] tracking-[2rem] m-5 lg:m-11">
+        <div className="text-white dark:text-black text-2xl md:text-[3rem] lg:text-[8rem] tracking-[2rem] m-5 lg:m-11">
             {text.split('').map((char, index) => (
                 <motion.span
                     key={index}
@@ -22,12 +22,12 @@ const AnimatedText = ({ text }) => {
 };
 
 const LogoLoader = () => (
-    <div className="w-full h-full min-h-screen flex flex-col justify-center items-center bg-[#020c1b] text-white">
+    <div className="w-full h-full min-h-screen flex flex-col justify-center items-center bg-[#020c1b] dark:bg-white dark:text-black text-white">
         <motion.div
             initial={{ width: "100%" }}
             animate={{ width: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="h-2 bg-white w-full"
+            className="h-2 bg-white dark:bg-black w-full"
         ></motion.div>
 
         <AnimatedText text="welcome" />
@@ -36,7 +36,7 @@ const LogoLoader = () => (
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="h-2 bg-white w-full"
+            className="h-2 bg-white dark:bg-black w-full"
         ></motion.div>
     </div>
 );

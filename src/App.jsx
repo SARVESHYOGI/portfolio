@@ -3,8 +3,9 @@ import "./App.css";
 import Home from "./pages/Home";
 import { LogoLoader } from "./components";
 import { AnimatePresence } from "framer-motion";
-
+import { useSelector } from 'react-redux';
 function App() {
+  const currentTheme = useSelector((state) => state.theme);
   const [logoLoader, setLogoLoader] = useState(true);
 
   useEffect(() => {
@@ -19,10 +20,20 @@ function App() {
   return (
     <AnimatePresence mode="wait">
       {logoLoader ? (
-        <LogoLoader />
-      ) : (
+        <div className={currentTheme === 'dark' ? 'dark' : ''}>
 
-        <Home />
+          <LogoLoader />
+        </div>
+
+      ) : (
+        <>
+          <div className={currentTheme === 'dark' ? 'dark' : ''}>
+
+            <Home />
+          </div>
+
+        </>
+
 
       )}
     </AnimatePresence>

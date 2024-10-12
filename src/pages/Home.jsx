@@ -28,18 +28,18 @@ const Home = () => {
 
     return (
         <div className="flex flex-col w-full h-full dark:bg-lightmBg bg-mainBg min-h-screen relative">
-            <div
+            {/* <div
                 className="pointer-events-none inset-0 z-30 transition duration-300 lg:absolute"
                 style={{
                     background: `radial-gradient( 400px at ${position.x}px ${position.y}px, rgba(29, 140, 216, 0.15), transparent 70%)`,
                 }}
-            ></div>
-            {/* <div
+            ></div> */}
+            <div
                 className="pointer-events-none inset-0 z-30 transition duration-300 lg:absolute"
                 style={{
-                    background: `radial-gradient( 400px at ${position.x}px ${position.y}px, rgba(100, 181, 246, 0.4), transparent 70%)`,
+                    background: `radial-gradient( 400px at ${position.x}px ${position.y}px,  rgba(55, 65, 81, 0.5), transparent 70%)`,
                 }}
-            ></div> */}
+            ></div>
             {/* rgba(100, 181, 246, 0.2) */}
             <Header />
             <SocialLinks />

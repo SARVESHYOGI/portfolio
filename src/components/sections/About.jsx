@@ -13,7 +13,7 @@ const About = () => {
             viewport={{ once: true }}
         >
             <div className="flex items-center justify-end relative mt-[10px] mb-[40px] mx-0 w-full whitespace-nowrap text-sectionHeading text-primaryText dark:text-lightpText font-bold">
-                <div className="hidden md:block w-full md:w-[200px] lg:w-[300px] h-[1px] bg-blue-400/20 dark:bg-orange-500/20 relative top-[5px] mr-[20px] "></div>
+                <div className="hidden md:block w-full md:w-[200px] lg:w-[300px] h-[1px] dark:bg-blue-400/20 bg-orange-600/20 relative top-[5px] mr-[20px] "></div>
                 <span className="relative -bottom-1 text-themeBlue dark:text-lightTheme font-mono text-smallSize font-semibold mr-[10px]">
                     02.
                 </span>

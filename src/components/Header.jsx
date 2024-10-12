@@ -46,9 +46,9 @@ const Header = () => {
                                     transition={{ delay: 0.2 + idx / 20, duration: 0.3 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                 >
-                                    <span className="text-themeBlue dark:text-lightTheme text-base mr-1">
+                                    {/* <span className="text-themeBlue dark:text-lightTheme text-base mr-1">
                                         0{idx + 1}.
-                                    </span>
+                                    </span> */}
                                     <a
                                         href={url}
                                         className="hover:text-themeBlue dark:hover:text-lightTheme transition-all duration-200"
@@ -95,9 +95,9 @@ const Header = () => {
                                         viewport={{ once: true }}
                                         className="p-[10px] my-0 mx-1 relative text-smallSize font-mono tracking-wide"
                                     >
-                                        <span className="text-themeBlue dark:text-lightTheme mr-1 text-[12px]">
+                                        {/* <span className="text-themeBlue dark:text-lightTheme mr-1 text-[12px]">
                                             0{idx + 1}.
-                                        </span>
+                                        </span> */}
                                         <a
                                             href={url}
                                             className="hover:text-themeBlue dark:hover:text-lightTheme transition-all duration-200 text-[14px]"

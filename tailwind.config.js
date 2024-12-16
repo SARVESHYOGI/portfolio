@@ -38,7 +38,7 @@ module.exports = {
         clamp3: "clamp(35px, 5vw, 50px)"
       },
       boxShadow: {
-        buttonShadow: "3px 3px 0 0 #64FFDA",
+        buttonShadow: "3px 3px 0 0 #4C5B6B",
         aboutShadow: "0 10px 30px -15px rgba(2,12,27,0.7)",
         bigShadow: "0 20px 30px -15px rgba(2,12,27,0.7);"
       },

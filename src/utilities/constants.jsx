@@ -93,6 +93,15 @@ export const mainProjects = [
         demo: "https://realtime-tracker-zg12.onrender.com/",
         image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721670630/Screenshot_2024-07-22_232002_kfl0li.png"
     },
+    {
+        title: "Book-store",
+        description:
+            "BookHub is a React-based application designed to fetch data from an API and seamlessly display responses on the page, offering users a streamlined experience for accessing book-related information.",
+        tags: ["React.js", "API", "JavaScript", "HTML", "CSS"],
+        github: "https://github.com/SARVESHYOGI/Book-store",
+        demo: "https://book-store-sarvesh-yogis-projects.vercel.app/",
+        image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1736418229/Screenshot_27_koiuu2.png"
+    },
 
 
     // {

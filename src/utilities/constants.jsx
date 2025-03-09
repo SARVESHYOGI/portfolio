@@ -66,6 +66,15 @@ export const social_links = [
 
 export const mainProjects = [
     {
+        title: "AI-Powered_SQL_Prep",
+        description:
+            "A MERN stack-based platform that helps users prepare for SQL interviews at big tech companies. Uses Gemini API to generate a personalized SQL study plan based on user responses. Features JWT authentication for secure access.",
+        tags: ["MERN-Stack", "Tailwind-CSS", "Gemini-API", "Redux"],
+        github: "https://github.com/SARVESHYOGI/AI-Powered_SQL_Prep",
+        demo: "https://ai-powered-sql-prep.vercel.app/",
+        image: 'https://res.cloudinary.com/dztzgqzjp/image/upload/v1741453503/HomaPage_fodjoq.png',
+    },
+    {
         title: "E-BHARAT",
         description:
             "created E-bharat, a fully functional shopping e-commerce website using React.js, Tailwind CSS, Firebase, and Redux, where admins can add products and customers can make purchases.",
@@ -84,15 +93,15 @@ export const mainProjects = [
         image:
             "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666195/Screenshot_2024-07-22_175341_uqewzt.png",
     },
-    {
-        title: "realtime-tracker",
-        description:
-            "A real-time tracking application developed with Node.js, Socket.io, and Express. This project enables live updates and tracking of data, providing an interactive user experience. It demonstrates real-time communication and data synchronization using WebSocket technology.",
-        tags: ["node.js", "socket.io", "JavaScript", "Express"],
-        github: "https://github.com/SARVESHYOGI/realtime-tracker",
-        demo: "https://realtime-tracker-zg12.onrender.com/",
-        image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721670630/Screenshot_2024-07-22_232002_kfl0li.png"
-    },
+    // {
+    //     title: "realtime-tracker",
+    //     description:
+    //         "A real-time tracking application developed with Node.js, Socket.io, and Express. This project enables live updates and tracking of data, providing an interactive user experience. It demonstrates real-time communication and data synchronization using WebSocket technology.",
+    //     tags: ["node.js", "socket.io", "JavaScript", "Express"],
+    //     github: "https://github.com/SARVESHYOGI/realtime-tracker",
+    //     demo: "https://realtime-tracker-zg12.onrender.com/",
+    //     image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721670630/Screenshot_2024-07-22_232002_kfl0li.png"
+    // },
     {
         title: "Book-store",
         description:
@@ -117,6 +126,15 @@ export const mainProjects = [
 ];
 
 export const otherProjects = [
+    {
+        title: "realtime-tracker",
+        description:
+            "A real-time tracking application developed with Node.js, Socket.io, and Express. This project enables live updates and tracking of data, providing an interactive user experience. It demonstrates real-time communication and data synchronization using WebSocket technology.",
+        tags: ["node.js", "socket.io", "JavaScript", "Express"],
+        github: "https://github.com/SARVESHYOGI/realtime-tracker",
+        demo: "https://realtime-tracker-zg12.onrender.com/",
+        // image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721670630/Screenshot_2024-07-22_232002_kfl0li.png"
+    },
     {
         title: "Tinder-Cards",
         description:

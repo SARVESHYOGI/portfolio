@@ -93,15 +93,22 @@ export const mainProjects = [
         image:
             "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666195/Screenshot_2024-07-22_175341_uqewzt.png",
     },
-    // {
-    //     title: "realtime-tracker",
-    //     description:
-    //         "A real-time tracking application developed with Node.js, Socket.io, and Express. This project enables live updates and tracking of data, providing an interactive user experience. It demonstrates real-time communication and data synchronization using WebSocket technology.",
-    //     tags: ["node.js", "socket.io", "JavaScript", "Express"],
-    //     github: "https://github.com/SARVESHYOGI/realtime-tracker",
-    //     demo: "https://realtime-tracker-zg12.onrender.com/",
-    //     image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721670630/Screenshot_2024-07-22_232002_kfl0li.png"
-    // },
+    {
+        title: "movie-explorer-app",
+        description:
+            "The Movie Explorer App is a web application built using Next.js 15 that allows users to browse movies, search for specific ones, and view detailed information. Users can also add movies to their favorites and manage their collection. It utilizes the TMDB API for movie data and features a responsive design with Tailwind CSS.",
+        tags: ["Next.js (15)", "Tailwind CSS", "TMDB API"],
+        github: "https://github.com/SARVESHYOGI/movie-explorer-app",
+        demo: "https://movie-explorer-app-rouge.vercel.app/",
+        image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1743170686/Screenshot_2025-03-28_193111_lhca3g.png   "
+    },
+
+
+
+
+];
+
+export const otherProjects = [
     {
         title: "Book-store",
         description:
@@ -109,23 +116,8 @@ export const mainProjects = [
         tags: ["React.js", "API", "JavaScript", "HTML", "CSS"],
         github: "https://github.com/SARVESHYOGI/Book-store",
         demo: "https://book-store-sarvesh-yogis-projects.vercel.app/",
-        image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1736418229/Screenshot_27_koiuu2.png"
+        // image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1736418229/Screenshot_27_koiuu2.png"
     },
-
-
-    // {
-    //     title: "TODOS",
-    //     description:
-    //         " Created a fully functional to-do application using React, Redux, and Tailwind CSS. The app features intuitive task management, real-time updates, and a sleek user interface. It demonstrates my ability to build efficient and user-friendly applications.",
-    //     tags: ["React.js", "Redux", "HTML", "Tailwind-CSS", "JavaScript"],
-    //     github: "https://github.com/SARVESHYOGI/TodoinReact",
-    //     demo: "https://todoisnreact-nu.vercel.app/",
-    //     image:
-    //         "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666312/Screenshot_2024-07-22_175248_kbqbhr.png",
-    // },
-];
-
-export const otherProjects = [
     {
         title: "realtime-tracker",
         description:

@@ -22,7 +22,7 @@ const AnimatedText = ({ text }) => {
 };
 
 const LogoLoader = () => (
-    <div className="w-full h-full min-h-screen flex flex-col justify-center items-center bg-[#020c1b] dark:bg-white dark:text-black text-white">
+    <div className="w-full h-full min-h-screen flex flex-col justify-center items-center bg-[#000000] dark:bg-white dark:text-black text-white">
         <motion.div
             initial={{ width: "100%" }}
             animate={{ width: 0 }}

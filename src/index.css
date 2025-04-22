@@ -27,13 +27,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a192f;
+  background: #fbfbfb;
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 3px solid #0a192f;
-  border-radius: 10px;
-  background-color: #495670;
+  border: 3px solid #000000fe;
+  border-radius: 0px;
+  background-color: #000000;
 }
 
 @tailwind base;

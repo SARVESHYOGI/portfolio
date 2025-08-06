@@ -13,7 +13,7 @@ const Contact = () => {
         >
             <h2 className="mx-0 mt-[10px] mb-[20px] w-full leading-[1.1] block text-themeBlue dark:text-lightTheme font-mono text-lg tracking-wider">
                 <span className="text-base relative bottom-0 -mb-[3px] mr-[5px] sm:mr-[10px] sm:mb-0">
-                    04.
+                    05.
                 </span>
                 Whats's Next?
             </h2>

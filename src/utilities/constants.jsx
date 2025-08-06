@@ -1,6 +1,6 @@
 import { LuLinkedin, LuGithub } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
+// import { SiLeetcode } from "react-icons/si";
 import { IoMdDocument } from "react-icons/io";
 export const navLinks = [
     {
@@ -10,6 +10,10 @@ export const navLinks = [
     {
         url: "/#about",
         name: "About",
+    },
+    {
+        url: "/#experience",
+        name: "Experience",
     },
 
     {
@@ -63,6 +67,33 @@ export const social_links = [
     // name: "Leetcode",
     // },
 ];
+
+export const experience = [
+    {
+        company: "Horizon View",
+        role: "Fullstack Developer Intern",
+        location: "Mumbai, India",
+        duration: "Nov 2024 – Dec 2024",
+        description: [
+            "developed a scalable erp system using next.js, firebase, and shadcn, managing 500+ students and 30+ teachers across multiple schools.",
+            "built secure role-based document uploads with firebase storage, including automated pdf generation for receipts and academic records.",
+            "improved fee tracking and communication via sms integration, while contributing to system architecture in an agile team."
+        ]
+    },
+    {
+        company: "IETE-TSEC",
+        role: "Web Developer",
+        location: "Mumbai, India",
+        duration: "July 2023 – May 2024",
+        description: [
+            "built and maintained an event registration site using react.js, tailwind css and google form api enabling real-time updates for 200+ participants.",
+            "handled logistics, promotions, and smooth coordination across tech workshops, coding events, and speaker sessions.",
+            "mentored juniors in frontend development, encouraging collaboration and peer learning within the committee."
+        ]
+    }
+];
+
+
 
 export const mainProjects = [
     {

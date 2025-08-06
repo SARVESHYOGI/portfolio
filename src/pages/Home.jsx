@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
     About,
     Contact,
+    Experience,
     Footer,
     Header,
     Hero,
@@ -47,6 +48,7 @@ const Home = () => {
                 <main className="px-[25px] sm:px-[50px] py-0 md:px-[100px] lg:px-[150px] my-0 mx-auto w-full max-w-[1600px] min-h-screen">
                     <Hero />
                     <About />
+                    <Experience />
                     <Projects />
                     <Contact />
                 </main>

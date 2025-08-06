@@ -34,7 +34,7 @@ const MainProjectCard = ({
                     </a>
                 </h3>
 
-                <div className="shadow-none md:shadow-aboutShadow transition-all duration-200 relative z-[2] py-[20px] md:p-[25px] rounded text-secondaryText dark:text-lightsText text-base bg-transparent md:bg-[#21232c] md:dark:bg-[#ebf3fe] font-fontParagraph md:hover:shadow-bigShadow">
+                <div className="shadow-none md:shadow-aboutShadow transition-all duration-200 relative z-[2] py-[20px] md:p-[25px] rounded text-secondaryText dark:text-lightsText text-base bg-transparent md:bg-slate-950 md:dark:bg-[#ebf3fe] font-fontParagraph md:hover:shadow-bigShadow">
                     <p>{description}</p>
                 </div>
                 {/* <div className="shadow-none md:shadow-lg transition-all duration-300 ease-in-out relative z-10 py-4 md:py-6 px-4 md:px-6 rounded-lg text-gray-700 dark:text-gray-300 text-base bg-white md:bg-[#ffb24d] dark:bg-gray-800 md:dark:bg-[#112240] font-sans hover:shadow-xl">

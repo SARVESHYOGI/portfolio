@@ -21,7 +21,7 @@ const Projects = () => {
             >
                 <div className="flex items-center justify-start relative mt-[10px] mb-[40px] mx-0 w-full whitespace-nowrap text-sectionHeading text-primaryText dark:text-lightpText font-bold">
                     <span className="relative -bottom-1 text-themeBlue dark:text-lightTheme font-mono text-smallSize font-semibold mr-[10px]">
-                        03.
+                        04.
                     </span>
                     <h2 className="text-sectionHeading">Some Things I've Built</h2>
                     <div className="block sm:hidden w-full h-[1px] bg-blue-400/20 dark:bg-orange-500/20 relative top-[5px] ml-[10px] "></div>

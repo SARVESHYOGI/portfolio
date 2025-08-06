@@ -13,7 +13,7 @@ const OtherProjectCard = ({
             viewport={{ once: true }}
             className="relative transition-all duration-200 ease-in-out"
         >
-            <div className="group flex flex-col justify-center items-start relative h-full px-7 py-8 rounded-[4px] md:bg-[#21232c] dark:bg-[#ebf3fe] transition-all duration-200 ease-in-out overflow-auto shadow-aboutShadow cursor-pointer">
+            <div className="group flex flex-col justify-center items-start relative h-full px-7 py-8 rounded-[4px] md:bg-slate-950 dark:bg-[#ebf3fe] transition-all duration-200 ease-in-out overflow-auto shadow-aboutShadow cursor-pointer">
                 <header>
                     <div className="flex justify-between items-center mb-[35px]">
                         <div className="text-themeBlue dark:text-lightTheme text-5xl">

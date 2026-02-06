@@ -109,7 +109,7 @@ const Header = () => {
                         </ol>
                         <ButtonLink
                             content="Resume"
-                            url="https://drive.google.com/file/d/1Kbnne-t-Xm6dR0_7gf1oAouOH0sDiFry/view?usp=sharing"
+                            url="https://drive.google.com/file/d/1CBHW2nmxxqH3r_5uGH33frkWLvrK7inT/view?usp=drive_link"
                             classNameBox="ml-[15px]"
                         />
                         {/* <Theme /> */}

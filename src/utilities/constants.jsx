@@ -1,6 +1,6 @@
 import { LuLinkedin, LuGithub } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
-// import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
 import { IoMdDocument } from "react-icons/io";
 export const navLinks = [
     {
@@ -27,16 +27,7 @@ export const navLinks = [
 ];
 
 export const skills = [
-    "C++",
-    "JavaScript (ES6+)",
-    "React Js",
-    "Redux Toolkit",
-    "Tailwind css",
-    "API Handling",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Next.js",
+    "JavaScript", "TypeScript", "Python", "C++", "Java", "React.js", "Next.js", "Node.js", "Express.js", "FastAPI", "RESTful APIs", "JWT Authentication", "PostgreSQL", "MongoDB", "MySQL", "LLM Integrations", "Prompt Engineering", "RAG", "AI API Integration", "Docker", "Git & GitHub", "CI/CD (GitHub Actions)", "Vercel", "AWS", "API Design", "Linux", "Postman", "VS Code", "Agile / Scrum", "Unit Testing(Jest)", "DSA", "OOPs"
 ];
 
 export const social_links = [
@@ -56,16 +47,16 @@ export const social_links = [
         name: "Twitter",
     },
     {
-        url: "https://drive.google.com/file/d/1Kbnne-t-Xm6dR0_7gf1oAouOH0sDiFry/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1CBHW2nmxxqH3r_5uGH33frkWLvrK7inT/view?usp=drive_link",
         icon: <IoMdDocument className="w-[22px] h-[22px]" />,
         name: "Resume",
     },
 
-    //{
-    // url: "https://leetcode.com/sarvesh2005/",
-    //icon: <SiLeetcode className="w-[22px] h-[22px]" />,
-    // name: "Leetcode",
-    // },
+    {
+        url: "https://leetcode.com/sarvesh2005/",
+        icon: <SiLeetcode className="w-[22px] h-[22px]" />,
+        name: "Leetcode",
+    },
 ];
 
 export const experience = [
@@ -97,23 +88,16 @@ export const experience = [
 
 export const mainProjects = [
     {
-        title: "AI-Powered_SQL_Prep",
+        title: "AI Learning Planner ",
         description:
-            "A MERN stack-based platform that helps users prepare for SQL interviews at big tech companies. Uses Gemini API to generate a personalized SQL study plan based on user responses. Features JWT authentication for secure access.",
-        tags: ["MERN-Stack", "Tailwind-CSS", "Gemini-API", "Redux"],
-        github: "https://github.com/SARVESHYOGI/AI-Powered_SQL_Prep",
-        demo: "https://ai-powered-sql-prep.vercel.app/",
-        image: 'https://res.cloudinary.com/dztzgqzjp/image/upload/v1741453503/HomaPage_fodjoq.png',
+            "AI Learning Planner is a full-stack AI-powered application that generates personalized learning roadmaps using LLMs (Gemini / Ollama). Built with React, Express, and MongoDB, it supports secure authentication, progress tracking, and scalable REST APIs. The system is deployed on Vercel with Docker, CI/CD pipelines, and testing, and supports both cloud-based and local AI inference.",
+        tags: ["AI", "LLMs", "Full-Stack", "MERN Stack", "React", "Node.js", "Express.js", "MongoDB", "REST APIs", "Docker", "CI/CD", "Gemini API", "Ollama", "SaaS"],
+        github: "https://github.com/SARVESHYOGI/AI-Learning-Planner",
+        demo: "https://ailearningplan.vercel.app/",
+        image: 'https://res.cloudinary.com/dztzgqzjp/image/upload/v1770404185/Screenshot_2026-02-07_002446_p8cquc.png',
     },
-    {
-        title: "E-BHARAT",
-        description:
-            "created E-bharat, a fully functional shopping e-commerce website using React.js, Tailwind CSS, Firebase, and Redux, where admins can add products and customers can make purchases.",
-        tags: ["React.js", "Tailwind CSS", "Firebase", "Redux"],
-        github: "https://github.com/SARVESHYOGI/Ecom",
-        demo: "https://ecom-orpin-iota.vercel.app/",
-        image: 'https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666327/Screenshot_2024-07-22_174232_bnrxqc.png',
-    },
+
+
     {
         title: "IETE-TSEC",
         description:
@@ -123,6 +107,14 @@ export const mainProjects = [
         demo: "https://www.ietetsec.in/",
         image:
             "https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666195/Screenshot_2024-07-22_175341_uqewzt.png",
+    },
+    {
+        title: "playwithalgorithms",
+        description: "Algorithm Visualization Platform. Visualizes searching (binary, linear), sorting (merge, quick, bubble, counting, radix, heap, insertion, selection), and data structures (stacks, queues, linked lists, hash maps/sets, binary trees, BSTs) with interactive, step-by-step animations.",
+        tags: ["Next.js", "TypeScript", "DSA", "ShadCn-Ui"],
+        github: "https://github.com/SARVESHYOGI/playwithalgorithms",
+        demo: "https://playwithalgorithms.vercel.app/",
+        image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1770404473/Screenshot_2026-02-07_003053_hpb4he.png"
     },
     {
         title: "movie-explorer-app",
@@ -148,6 +140,15 @@ export const otherProjects = [
         github: "https://github.com/SARVESHYOGI/Book-store",
         demo: "https://book-store-sarvesh-yogis-projects.vercel.app/",
         // image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1736418229/Screenshot_27_koiuu2.png"
+    },
+    {
+        title: "E-BHARAT",
+        description:
+            "created E-bharat, a fully functional shopping e-commerce website using React.js, Tailwind CSS, Firebase, and Redux, where admins can add products and customers can make purchases.",
+        tags: ["React.js", "Tailwind CSS", "Firebase", "Redux"],
+        github: "https://github.com/SARVESHYOGI/Ecom",
+        demo: "https://ecom-orpin-iota.vercel.app/",
+        image: 'https://res.cloudinary.com/dztzgqzjp/image/upload/v1721666327/Screenshot_2024-07-22_174232_bnrxqc.png',
     },
     {
         title: "realtime-tracker",

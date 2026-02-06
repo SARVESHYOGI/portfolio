@@ -38,10 +38,10 @@ const Home = () => {
             <div
                 className="pointer-events-none inset-0 z-30 transition duration-300 lg:absolute"
                 style={{
-                    background: `radial-gradient( 400px at ${position.x}px ${position.y}px,  rgba(55, 65, 81, 0.5), transparent 70%)`,
+                    background: `radial-gradient( 400px at ${position.x}px ${position.y}px,rgba(100, 181, 246, 0.2) , transparent 100%)`,
                 }}
             ></div>
-            {/* rgba(100, 181, 246, 0.2) */}
+            {/*   rgba(55, 65, 81, 0.3)*/}
             <Header />
             <SocialLinks />
             <div id="content" className="">

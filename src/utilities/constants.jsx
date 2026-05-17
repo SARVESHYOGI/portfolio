@@ -47,7 +47,7 @@ export const social_links = [
         name: "Twitter",
     },
     {
-        url: "https://drive.google.com/file/d/1CBHW2nmxxqH3r_5uGH33frkWLvrK7inT/view?usp=drive_link",
+        url: "https://drive.google.com/file/d/1mrJgIiBCjUSS71dRXRA7me-AAep7yj8I/view?usp=drive_link",
         icon: <IoMdDocument className="w-[22px] h-[22px]" />,
         name: "Resume",
     },
@@ -60,6 +60,28 @@ export const social_links = [
 ];
 
 export const experience = [
+    {
+        company: "Presolv360",
+        role: "Software Developer Intern",
+        location: "Mumbai, India",
+        duration: "Mar 2026 – Present",
+        description: [
+            "built an automated document generation system that processes templates and csv data to dynamically map variables and generate bulk pdfs.",
+            "streamlined legal document workflows by automating template mapping, document generation, and bulk processing operations.",
+            "currently developing an ai-powered chatbot for secure retrieval of legal case status and related documents through user verification workflows."
+        ]
+    },
+    {
+        company: "Fleksa",
+        role: "Software Developer Intern",
+        location: "Remote",
+        duration: "Feb 2026 – Mar 2026",
+        description: [
+            "implemented and customized the puck website builder for restaurant website personalization.",
+            "developed responsive frontend components and maintained playwright end-to-end test scripts.",
+            "worked on frontend optimization and website customization workflows for restaurant owners."
+        ]
+    },
     {
         company: "Horizon View",
         role: "Fullstack Developer Intern",
@@ -78,7 +100,7 @@ export const experience = [
         duration: "July 2023 – May 2024",
         description: [
             "built and maintained an event registration site using react.js, tailwind css and google form api enabling real-time updates for 200+ participants.",
-            "handled logistics, promotions, and smooth coordination across tech workshops, coding events, and speaker sessions.",
+            "handled payment and map api integrations for event registration workflows.",
             "mentored juniors in frontend development, encouraging collaboration and peer learning within the committee."
         ]
     }

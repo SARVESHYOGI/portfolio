@@ -35,7 +35,7 @@ const Hero = () => {
                         viewport={{ once: true }}
                         className="text-center lg:text-left text-clamp2 text-secondaryText dark:text-lightsText font-bold font-fontHeading"
                     >
-                        Full Stack Developer & DSA Enthusiast
+                       Software Developer | Full-Stack & AI Applications
                     </motion.h3>
                     <motion.p
                         initial={{ opacity: 0, y: 15 }}

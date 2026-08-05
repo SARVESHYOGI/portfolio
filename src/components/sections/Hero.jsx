@@ -35,7 +35,7 @@ const Hero = () => {
                         viewport={{ once: true }}
                         className="text-center lg:text-left text-clamp2 text-secondaryText dark:text-lightsText font-bold font-fontHeading"
                     >
-                       Software Developer | Full-Stack & AI Applications
+                       AI Engineer & Software Developer
                     </motion.h3>
                     <motion.p
                         initial={{ opacity: 0, y: 15 }}
@@ -44,8 +44,7 @@ const Hero = () => {
                         viewport={{ once: true }}
                         className="text-center lg:text-left m-0 mt-[20px] text-secondaryText dark:text-lightsText font-fontParagraph"
                     >
-                        I'm a passionate Full Stack developer specialized in building
-                        exceptional web apps from Mumbai, India 📍
+                        I'm a passionate AI Developer and Software Developer based in Mumbai, India 📍 specializing in building intelligent, full-stack web applications and custom LLM integrations.
                     </motion.p>
                     <ButtonLink
                         content="Get In Touch!"
@@ -69,6 +68,8 @@ const Hero = () => {
                             backgroundPosition: "center center",
                             backgroundSize: "cover",
                         }}
+                        role="img"
+                        aria-label="Sarvesh Yogi - AI Engineer & Software Developer Profile Photo"
                     ></div>
                 </motion.div>
             </div>

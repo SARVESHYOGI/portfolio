@@ -31,12 +31,14 @@ const About = () => {
                                 backgroundPosition: "center 25%",
                                 backgroundSize: "cover",
                             }}
+                            role="img"
+                            aria-label="Sarvesh Yogi - AI Developer and Software Developer Portfolio Picture"
                         ></div>
                     </div>
                 </div>
                 <div className="text-secondaryText dark:text-lightsText font-fontParagraph text-base md:text-justify w-full md:max-w-[350px] lg:max-w-[500px]">
                     <p className="mb-3">
-                        As a Full Stack Developer, I possess an impressive arsenal of skills
+                        As an <span className="text-themeBlue dark:text-lightTheme">AI Developer</span> and <span className="text-themeBlue dark:text-lightTheme">Full Stack Software Developer</span>, I possess an impressive arsenal of skills
                         in <span className="text-themeBlue dark:text-lightTheme">HTML</span>,{" "}
                         <span className="text-themeBlue dark:text-lightTheme">CSS</span>,{" "}
                         <span className="text-themeBlue dark:text-lightTheme">SCSS</span>,{" "}
@@ -48,7 +50,7 @@ const About = () => {
                         <span className="text-themeBlue dark:text-lightTheme">Next.js</span>,{" "}
                         <span className="text-themeBlue dark:text-lightTheme">Express.js</span> and{" "}
                         <span className="text-themeBlue dark:text-lightTheme">Mongo DB</span>. I excel in
-                        designing and maintaining responsive websites that offer a smooth
+                        designing, building, and maintaining responsive AI-powered applications and web solutions that offer a smooth
                         user experience. My expertise lies in crafting dynamic, engaging
                         interfaces through writing clean and optimized code and utilizing
                         cutting-edge development tools and techniques.

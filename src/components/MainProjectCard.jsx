@@ -103,6 +103,7 @@ const MainProjectCard = ({
                             <img
                                 className="w-full md:w-full h-full min-h-[400px] bg-no-repeat rounded-lg relative object-cover transition-all duration-500 mix-blend-multiply brightness-50 md:brightness-95   group-hover:mix-blend-normal group-hover:filter-none opacity-85 md:opacity-100 z-[4]"
                                 src={image}
+                                alt={`${title} - Project by Sarvesh Yogi, AI Engineer & Software Developer`}
                             />
                         </div>
                     </div>

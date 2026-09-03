@@ -62,13 +62,17 @@ export const social_links = [
 export const experience = [
     {
         company: "Presolv360",
-        role: "Software Developer Intern",
+        role: "Software Developer",
         location: "Mumbai, India",
         duration: "Mar 2026 – Present",
         description: [
-            "built an automated document generation system that processes templates and csv data to dynamically map variables and generate bulk pdfs.",
-            "streamlined legal document workflows by automating template mapping, document generation, and bulk processing operations.",
-            "currently developing an ai-powered chatbot for secure retrieval of legal case status and related documents through user verification workflows."
+            "promoted from Software Developer Intern to Software Developer.",
+            "led end-to-end development of a multi-modal RAG system for enterprise security automation, integrating vision models and human-in-the-loop validation workflows.",
+            "built an end-to-end AI pipeline with multi-format ingestion (PDF, DOCX, images), OCR (PaddleOCR), vision LLMs (LLaVA), and hybrid retrieval (pgvector + PostgreSQL FTS).",
+            "deployed self-hosted AI services on EC2, including embedding pipelines, prompt orchestration, and audit logging, achieving sub-10s latency while reducing external API dependency.",
+            "developed an RAG-based legal assistant for secure retrieval of case data and legal documents.",
+            "built an automated document generation pipeline mapping structured CSV data to templates, reducing processing time from days to minutes.",
+            "engineered an automated billing workflow system eliminating manual Excel-based processes and processing 500+ records in minutes."
         ]
     },
     {
@@ -77,20 +81,19 @@ export const experience = [
         location: "Remote",
         duration: "Feb 2026 – Mar 2026",
         description: [
-            "implemented and customized the puck website builder for restaurant website personalization.",
-            "developed responsive frontend components and maintained playwright end-to-end test scripts.",
-            "worked on frontend optimization and website customization workflows for restaurant owners."
+            "implemented and customized the puck website builder, enabling restaurant owners to create and manage personalized websites.",
+            "developed responsive frontend components and maintained playwright end-to-end test scripts."
         ]
     },
     {
         company: "Horizon View",
         role: "Fullstack Developer Intern",
         location: "Mumbai, India",
-        duration: "Nov 2024 – Dec 2024",
+        duration: "Oct 2024 – Dec 2024",
         description: [
-            "developed a scalable erp system using next.js, firebase, and shadcn, managing 500+ students and 30+ teachers across multiple schools.",
-            "built secure role-based document uploads with firebase storage, including automated pdf generation for receipts and academic records.",
-            "improved fee tracking and communication via sms integration, while contributing to system architecture in an agile team."
+            "built backend services for an ERP platform serving 700+ users with secure access control workflows.",
+            "built role-based dashboards with backend-enforced RBAC and implemented oauth + jwt authentication using firebase auth.",
+            "designed fee payment workflows with status tracking and automated pdf receipt generation, integrating firebase storage + sms notifications."
         ]
     },
     {
@@ -109,6 +112,15 @@ export const experience = [
 
 
 export const mainProjects = [
+    {
+        title: "SignalIQ ",
+        description:
+            "SignalIQ is an agentic AI system for real-time web intelligence. Built with FastAPI, LangGraph, DuckDuckGo, Gemini, Ollama, OpenAI, PostgreSQL, and Next.js, it augments LLM responses with real-time web intelligence using structured content extraction and a multi-step retrieval and reasoning pipeline. It features a multi-LLM orchestration layer with automatic fallback to ensure reliability under failures and rate limits.",
+        tags: ["FastAPI", "LangGraph", "AI", "RAG", "Gemini", "Ollama", "OpenAI", "PostgreSQL", "Next.js"],
+        github: "https://github.com/SARVESHYOGI",
+        demo: "https://github.com/SARVESHYOGI",
+        image: "https://res.cloudinary.com/dztzgqzjp/image/upload/v1788459230/1483513E-256A-46C1-9268-B1CD1E453BDF_rrfmty.png",
+    },
     {
         title: "AI Learning Planner ",
         description:

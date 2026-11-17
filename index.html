@@ -97,9 +97,10 @@
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Chat widget: Ask about Sarvesh -->
+    <!-- No data-api on purpose: the widget derives the API origin from this src,
+         so it always matches the deployment serving the script. -->
     <script
       src="https://sarveshchatbot.vercel.app/widget/chat-widget.js"
-      data-api="https://chatbot-three-ivory-81.vercel.app"
       data-owner="Sarvesh Yogi"
       data-title="Ask about Sarvesh"
       defer

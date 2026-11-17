@@ -23,7 +23,7 @@ module.exports = {
         themeBlue: "#FFAA33",
       },
       fontFamily: {
-        fontHeading: "Poppins, sans-serif",
+        fontHeading: "Syne, sans-serif",
         fontParagraph: "Mulish, sans-serif"
       },
       fontSize: {

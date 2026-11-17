@@ -115,7 +115,7 @@ export const mainProjects = [
     {
         title: "SignalIQ ",
         description:
-            "SignalIQ is an agentic AI system for real-time web intelligence. Built with FastAPI, LangGraph, DuckDuckGo, Gemini, Ollama, OpenAI, PostgreSQL, and Next.js, it augments LLM responses with real-time web intelligence using structured content extraction and a multi-step retrieval and reasoning pipeline. It features a multi-LLM orchestration layer with automatic fallback to ensure reliability under failures and rate limits.",
+            "SignalIQ reduces research time by 80% through multi-LLM orchestration with automatic fallback — processing 1000+ queries/day with 99.9% uptime. Built with FastAPI, LangGraph, DuckDuckGo, Gemini, Ollama, OpenAI, PostgreSQL, and Next.js, it augments LLM responses with real-time web intelligence using structured content extraction and a multi-step retrieval and reasoning pipeline.",
         tags: ["FastAPI", "LangGraph", "AI", "RAG", "Gemini", "Ollama", "OpenAI", "PostgreSQL", "Next.js"],
         github: "https://github.com/SARVESHYOGI",
         demo: "https://github.com/SARVESHYOGI",

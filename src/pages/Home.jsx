@@ -41,6 +41,12 @@ const Home = () => {
                     background: `radial-gradient( 400px at ${position.x}px ${position.y}px,rgba(100, 181, 246, 0.2) , transparent 100%)`,
                 }}
             ></div>
+            <div
+                className="pointer-events-none inset-0 z-30 transition duration-300 lg:absolute"
+                style={{
+                    background: `radial-gradient( 600px at ${position.x * 0.5}px ${position.y * 0.5}px,rgba(100, 181, 246, 0.1) , transparent 80%)`,
+                }}
+            ></div>
             {/*   rgba(55, 65, 81, 0.3)*/}
             <Header />
             <SocialLinks />

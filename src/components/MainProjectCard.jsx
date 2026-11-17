@@ -24,11 +24,16 @@ const MainProjectCard = ({
                     gridArea: "1 / 1 / -1 / 7",
                 }}
             >
-                <p className="my-[10px] text-themeBlue dark:text-lightTheme font-mono text-sm font-semibold tracking-wider">
-                    Featured Project
-                </p>
+                <div className="flex items-center justify-between gap-3 my-[10px] flex-wrap">
+                    <p className="text-themeBlue dark:text-lightTheme font-mono text-sm font-semibold tracking-wider">
+                        Featured Project
+                    </p>
+                    <span className="text-secondaryText dark:text-lightsText font-mono text-xs bg-themeBlue/10 dark:bg-lightTheme/10 border border-themeBlue/20 dark:border-lightTheme/20 px-2 py-0.5 rounded-full">
+                        {tags.length} technologies
+                    </span>
+                </div>
 
-                <h3 className="text-primaryText dark:text-lightpText font-bold leading-[1.1] text-sectionHeading transition-all duration-200 hover:text-themeBlue dark:hover:text-lightTheme font-fontHeading md:mb-[20px]">
+                <h3 className="text-primaryText dark:text-lightpText font-bold leading-[1.1] text-sectionHeading transition-all duration-300 hover:text-themeBlue dark:hover:text-lightTheme font-fontHeading md:mb-[20px] hover:translate-x-1">
                     <a href={demo} target="_blank" rel="noopener noreferrer">
                         {title}
                     </a>
